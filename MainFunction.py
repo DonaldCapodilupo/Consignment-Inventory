@@ -131,6 +131,10 @@ def addDatabaseRow():
               (today, newRow.barcodeNumber, newRow.description, newRow.owner,newRow.ownerNumber))  # This line of code added a new row to the database.
     conn.commit()
     print(newRow.description + " has been added.\n")
+    print("Insert another inventory from the same customer?\n")
+    moreInventory = input(">")
+
+
     mainDirectory()
 
 #Takes a list and converts it into a form that users can select a numerical option. Return value is a string.
